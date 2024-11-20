@@ -8,15 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aspose.Words" Version="23.12.0" />
-    <PackageReference Include="ceTe.DynamicPDF.Converter.NET" Version="3.23.0" />
+    <PackageReference Include="Aspose.Words" Version="24.11.1" />
+    <PackageReference Include="ceTe.DynamicPDF.Converter.NET" Version="3.27.0" />
+    <PackageReference Include="DS.Documents.Word" Version="7.2.4" />
+    <PackageReference Include="DS.Documents.Word.Layout" Version="7.2.4" />
     <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="files\" />
     <Folder Include="files_convert\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ceTe.DynamicPDF.Converter.40">
+      <HintPath>ceTe.DynamicPDF.Converter.40.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

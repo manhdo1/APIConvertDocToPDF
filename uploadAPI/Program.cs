@@ -23,10 +23,16 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.MapGet("/", context =>
+    {
+        context.Response.Redirect("/swagger/index.html");
+        return Task.CompletedTask;
+    });
     app.UseCors("AllowSpecificOrigin");
 }
-app.UseSwagger();
-app.UseSwaggerUI();
+
+//app.UseSwagger();
+//app.UseSwaggerUI();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
